@@ -8,9 +8,10 @@ public class User {
     public Account account;
 
 
-    private boolean chectPin(int pinText) {
+    public boolean chectPin(int pinText) {
             return pin == pinText;
     }
+
 
 
 }

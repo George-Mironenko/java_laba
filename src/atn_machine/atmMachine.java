@@ -2,11 +2,11 @@ package atn_machine;
 
 public interface atmMachine {
 
-    int getBalanse();
+    public float getBalanse(Account account, int pin);
 
-    boolean topAccount();
+    public boolean topAccount(Account account, int pin, float money);
 
-    boolean withdrawMoney();
+    public boolean withdrawMoney(Account account, int pin, float money);
 
-    boolean  transferMoney(Account another, int money);
+    public boolean  transferMoney(Account account, Account recipient, int pin, int money);
 }
